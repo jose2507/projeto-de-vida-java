@@ -46,9 +46,29 @@
     border-right:4px solid var(--botao-ativo);
     border-top: none;
 }
+.Botão:first-child{
+    border-radius: 40px 40px 0;
+    
+}
+.Botões{
+    display: block;
+}
+.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom:4px solid var(--verde);
+}
+.abas.textos{
+    background-color: var(--texto-de-fundo);
+}
 @media screen and (min-width: 768px) {
     .Botões{
         display: flex;
+    }
+    .Botão:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .Botão:last-child{
+        border-radius: 0 40px 0 0;
     }
 }
 
