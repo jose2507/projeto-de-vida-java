@@ -2,7 +2,7 @@
 
 :root {
     --cor-de-fundo: #1E1E1E;
-    --verde: #0a37ff;
+    --verde: #2a0fa5;
     --branco: #FFFFFF;
     --botao-ativo: #3A375E;
     --botao-inativo: rgba(58, 55, 94, 0.5);
@@ -27,7 +27,7 @@ body {
 }
 
 .titulo-principal {
-    text-align: left;
+    text-align: center;
     width: 100%;
     font-size: 32px;
 }
@@ -88,23 +88,30 @@ body {
     color: var(--verde);
     text-transform: uppercase;
 }
-    .contador{
-        display: flex;
-        justify-content: center; 
-    }
-    .contador-digito{
-        padding: 0 16px;
-        text-align: center;
-    }
-    .contador-digito-numero{
-        font-size: 80px;
-        margin: 0;
 
-    }
-    .contador-digito-texto{
-        color: var(--verde);
-        font-size: 20px;
-    }
+.contador{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+
+}
+
+.contador-digito-texto{
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+
+}
 
 @media screen and (min-width: 768px) {
     .botoes {
