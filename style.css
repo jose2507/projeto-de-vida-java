@@ -89,9 +89,23 @@ body {
     text-transform: uppercase;
 }
     .contador{
-        font-size: 20px;
+        display: flex;
+        justify-content: center; 
+    }
+    .contador-digito{
+        padding: 0 16px;
         text-align: center;
     }
+    .contador-digito-numero{
+        font-size: 80px;
+        margin: 0;
+
+    }
+    .contador-digito-texto{
+        color: var(--verde);
+        font-size: 20px;
+    }
+
 @media screen and (min-width: 768px) {
     .botoes {
         display: flex;
